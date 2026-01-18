@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>김준서 EUPHORIA 포카</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+  <h1>김준서 EUPHORIA 포카</h1>
+  <div id="counter"></div>
+
+  <h2>📀 앨범 포카</h2>
+  <div class="card-list" id="albumCards"></div>
+
+  <h2>🎁 미공포</h2>
+  <div class="card-list" id="eventCards"></div>
+
+  <script src="firebase.js"></script>
+  <script src="script.js"></script>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
+
+</body>
+</html>
